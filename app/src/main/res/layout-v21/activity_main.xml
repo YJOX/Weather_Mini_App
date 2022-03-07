@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:text="@string/logo_text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_text"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="100sp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:hint="@string/hint_user_field"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/textColorHint" />
+
+    <Button
+        android:id="@+id/check_weather_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_field"
+        android:layout_marginHorizontal="130sp"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:text="@string/main_btn"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/result_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check_weather_btn"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="50sp"
+        android:text="@string/logo_text" />
+
+
+</RelativeLayout>
